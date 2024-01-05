@@ -15,12 +15,14 @@
 "use client";
 import { changeTheme } from "@/utils/helper";
 
-export default function Home() {
+export default function ThemeSelect() {
   const themes = [
-    { label: "light", value: " " },
-    { label: "cyberpunk", value: "theme1" },
-    { label: "dark", value: "theme2" },
-    { label: "forest", value: "theme3" },
+    { label: "light", value: "" },
+    { label: "dark", value: "dark" },
+    { label: "lofi", value: "lofi" },
+    { label: "luxury", value: "luxury" },
+    { label: "retro", value: "retro" },
+    { label: "emerald", value: "emerald" },
   ];
   const blogData = {
     category: "Theme",
@@ -32,11 +34,8 @@ export default function Home() {
     time: "5 min read",
   };
   return (
-    <div>
-      <label
-        htmlFor="theme"
-        className="block mb-2 text-sm font-medium bg-buttons text-typography"
-      >
+    <div className="bg-background text-baseContent p-5 md:p-20">
+      <label htmlFor="theme" className="block mb-2 text-sm font-medium">
         <h2 className="text-center text-bold text-2xl">
           Select an option to Change the theme you want
         </h2>
@@ -44,7 +43,7 @@ export default function Home() {
       <select
         id="countries"
         onChange={(e) => changeTheme(e.target.value)}
-        className="bg-gray-50 bg-buttons text-typography border rounded-lg focus:ring-buttons focus:border-buttons  w-full p-2.5"
+        className="border border-baseContent rounded-lg w-full p-2.5 bg-background"
       >
         {themes.map((theme, index) => (
           <option key={index} value={theme.value}>
@@ -53,7 +52,7 @@ export default function Home() {
         ))}
       </select>
       <div className="p-6 md:p-20">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 ">
           <p>Theme</p>
           <h1 className="text-4xl font-extrabold">Short heading goes here</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -75,9 +74,11 @@ export default function Home() {
                 <p className="line-clamp-2">{blogData.dec}</p>
                 <div className="flex gap-4">
                   <div>
-                    <div className="w-16 rounded-full">
-                      <img src={blogData.avatar} alt="avatar" />
-                    </div>
+                    <img
+                      class="inline-block h-16 w-16 rounded-full ring-2 ring-white"
+                      src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
                   </div>
                   <div>
                     <p>{blogData.name}</p>
@@ -93,7 +94,7 @@ export default function Home() {
           ))}
         </div>
         <div className="flex justify-end">
-          <button className="border py-4 rounded-2xl w-28 md:w-32">
+          <button className="border border-primary w-28 md:w-32 rounded-2xl py-4 hover:bg-primary hover:hover:text-primaryContent transition duration-200 easy-in-out active:scale-95">
             view all
           </button>
         </div>

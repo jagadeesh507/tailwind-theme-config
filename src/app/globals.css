@@ -4,12 +4,20 @@
 
 @layer base {
   html {
-    --color-primary: #4285f4;
-    --color-secondary: #34a853;
-    --color-buttons: #fbbc05;
-    --color-typography: #ea4335;
+    --color-primary: #3366cc;
+    --color-secondary: #4285f4;
+    --color-accent: #fbbc05;
+    --color-neutral: #757575;
+    --color-base-100: #ffffff;
+    --color-base-content: #000000;
+    --color-info: #0d47a1;
+    --color-success: #4caf50;
+    --color-warning: #ff9800;
+    --color-error: #f44336;
   }
 }
-@import "../themes/theme1.css";
-@import "../themes/theme2.css";
-@import "../themes/theme3.css";
+@import "../themes/dark.css";
+@import "../themes/lofi.css";
+@import "../themes//luxury.css";
+@import "../themes/retro.css";
+@import "../themes/emerald.css";

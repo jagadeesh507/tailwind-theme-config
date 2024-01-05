@@ -9,9 +9,13 @@ module.exports = {
     extend: {
       colors: {
         primary: "var(--color-primary)",
+        primaryContent: "var(--color-primary-content)",
         secondary: "var(--color-secondary)",
         buttons: "var(--color-buttons)",
         typography: "var(--color-typography)",
+        rounded: "var(--rounded-box)",
+        background: "var(--color-base-100)",
+        baseContent: "var(--color-base-content)",
       },
     },
   },

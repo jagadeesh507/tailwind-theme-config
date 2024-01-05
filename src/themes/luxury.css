@@ -1,0 +1,9 @@
+html[data-theme="luxury"] {
+  --color-primary: #ffffff;
+  --color-secondary: #152747;
+  --color-accent: #513448;
+  --color-neutral: #331800;
+  --color-neutral-content: #ffe7a3;
+  --color-base-100: #09090b;
+  --color-base-content: #dca54c;
+}

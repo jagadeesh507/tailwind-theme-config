@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Button from "@/components/button";
+import ThemeSelect from "@/components/theme-select";
 export default function Home() {
   return (
     <div>
-      <Button />
+      <ThemeSelect />
     </div>
   );
 }
