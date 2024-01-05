@@ -1,5 +1,6 @@
 html[data-theme="luxury"] {
   --color-primary: #ffffff;
+  --color-primary-content: #000000;
   --color-secondary: #152747;
   --color-accent: #513448;
   --color-neutral: #331800;
