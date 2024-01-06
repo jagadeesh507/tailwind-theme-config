@@ -51,7 +51,28 @@ export default function ThemeSelect() {
           </option>
         ))}
       </select>
-      <div className="p-6 md:p-20">
+      <div className="flex flex-col md:flex-row justify-between gap-y-5 md:gap-x-10 text-center md:text-left pt-16">
+        <div className="w-full flex flex-col gap-y-6 md:gap-y-12">
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-loose">
+            The most popular <p className="text-primary ">component library</p>{" "}
+            for Tailwind CSS
+          </h1>
+          <p>
+            daisyUI adds component class names to Tailwind CSS so you can make
+            beautiful websites faster than ever.
+          </p>
+          <div className="flex flex-col md:flex-row md:gap-x-5 gap-y-5">
+            <button className="py-4 border rounded-2xl w-full transition easy-in-out duration-300 active:scale-95">
+              See components
+            </button>
+            <button className="py-4 rounded-2xl w-full bg-primary transition easy-in-out duration-300 active:scale-95 text-primaryContent">
+              How to use?
+            </button>
+          </div>
+        </div>
+        <img className="w-full rounded-2xl" src="./images/home.jpg" at="" />
+      </div>
+      <div className="py-6">
         <div className="flex flex-col gap-5 ">
           <p>Theme</p>
           <h1 className="text-4xl font-extrabold">Short heading goes here</h1>
@@ -75,7 +96,7 @@ export default function ThemeSelect() {
                 <div className="flex gap-4">
                   <div>
                     <img
-                      class="inline-block h-16 w-16 rounded-full ring-2 ring-white"
+                      className="inline-block h-16 w-16 rounded-full ring-2 ring-white"
                       src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                       alt=""
                     />
@@ -93,7 +114,10 @@ export default function ThemeSelect() {
             </div>
           ))}
         </div>
-        <div className="flex justify-end">
+        <div className="flex justify-end gap-x-4">
+          <button className="border border-primary w-28 md:w-32 rounded-2xl py-4 bg-primary text-primaryContent transition duration-200 easy-in-out active:scale-95">
+            Close all
+          </button>
           <button className="border border-primary w-28 md:w-32 rounded-2xl py-4 hover:bg-primary hover:hover:text-primaryContent transition duration-200 easy-in-out active:scale-95">
             view all
           </button>
