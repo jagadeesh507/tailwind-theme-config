@@ -15,7 +15,7 @@ function ThemeChange() {
     <select
       id="theme"
       onChange={(e) => changeTheme(e.target.value)}
-      className="border border-baseContent rounded-lg max-w-[60px] p-2.5 bg-background text-baseContent"
+      className="border border-baseContent rounded-lg max-w-[60px] p-4 bg-background text-baseContent"
     >
       {themes.map((theme, index) => (
         <option key={index} value={theme.value}>
