@@ -1,9 +1,13 @@
-import Image from "next/image";
-import ThemeSelect from "@/components/theme-select";
+import LandingPage from "@/components/landing-page";
+import ProductsPage from "@/components/products-page";
+import NavBar from "@/components/nav-header";
+
 export default function Home() {
   return (
     <div>
-      <ThemeSelect />
+      <NavBar />
+      <LandingPage />
+      <ProductsPage />
     </div>
   );
 }

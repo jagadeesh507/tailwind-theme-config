@@ -1,29 +1,4 @@
-// import React from "react";
-
-// function Button() {
-//   return (
-//     <div className="flex justify-center items-center pt-20">
-//       <button className="border border-1 p-4 rounded-2xl bg-gray-100 hover:bg-gray-700 hover:text-white transition duration-200 ease-in-out active:scale-95">
-//         Click me
-//       </button>
-//     </div>
-//   );
-// }
-
-// export default Button;
-
-"use client";
-import { changeTheme } from "@/utils/helper";
-
-export default function ThemeSelect() {
-  const themes = [
-    { label: "light", value: "" },
-    { label: "dark", value: "dark" },
-    { label: "lofi", value: "lofi" },
-    { label: "luxury", value: "luxury" },
-    { label: "retro", value: "retro" },
-    { label: "emerald", value: "emerald" },
-  ];
+export default function LandingPage() {
   const blogData = {
     category: "Theme",
     title: "Blog title heading will go here",
@@ -34,23 +9,7 @@ export default function ThemeSelect() {
     time: "5 min read",
   };
   return (
-    <div className="bg-background text-baseContent p-5 md:p-20">
-      <label htmlFor="theme" className="block mb-2 text-sm font-medium">
-        <h2 className="text-center text-bold text-2xl">
-          Select an option to Change the theme you want
-        </h2>
-      </label>
-      <select
-        id="countries"
-        onChange={(e) => changeTheme(e.target.value)}
-        className="border border-baseContent rounded-lg w-full p-2.5 bg-background"
-      >
-        {themes.map((theme, index) => (
-          <option key={index} value={theme.value}>
-            {theme.label}
-          </option>
-        ))}
-      </select>
+    <div className="bg-background text-baseContent px-5 md:px-20 pt-4 md:pt-8">
       <div className="flex flex-col md:flex-row justify-between gap-y-5 md:gap-x-10 text-center md:text-left pt-16">
         <div className="w-full flex flex-col gap-y-6 md:gap-y-12">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-loose">
@@ -72,7 +31,7 @@ export default function ThemeSelect() {
         </div>
         <img className="w-full rounded-2xl" src="./images/home.jpg" at="" />
       </div>
-      <div className="py-6">
+      <div className="py-5 md:py-12">
         <div className="flex flex-col gap-5 ">
           <p>Theme</p>
           <h1 className="text-4xl font-extrabold">Short heading goes here</h1>
