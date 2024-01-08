@@ -1,0 +1,12 @@
+html[data-theme="aqua"] {
+  --color-primary: #09ecf3;
+  --color-primary-content: #005355;
+  --color-secondary: #966fb3;
+  --color-accent: #ffe999;
+  --color-neutral: #3b8ac4;
+  --color-base-100: #345da7;
+  --color-info: #2563eb;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-base-content: #ffffff;
+}

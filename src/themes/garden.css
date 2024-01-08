@@ -1,0 +1,10 @@
+html[data-theme="garden"] {
+  --color-primary: #f50076;
+  --color-primary-content: #fff;
+  --color-secondary: #8e4162;
+  --color-accent: #5c7f67;
+  --color-neutral: #291e00;
+  --color-neutral-content: #e9e7e7;
+  --color-base-100: #e9e7e7;
+  --color-base-content: #100f0f;
+}

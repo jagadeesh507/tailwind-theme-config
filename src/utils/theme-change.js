@@ -10,6 +10,8 @@ function ThemeChange() {
     { label: "luxury", value: "luxury" },
     { label: "retro", value: "retro" },
     { label: "emerald", value: "emerald" },
+    { label: "aqua", value: "aqua" },
+    { label: "garden", value: "garden" },
   ];
   return (
     <select
